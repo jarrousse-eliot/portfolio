@@ -1,5 +1,5 @@
 import i18n from "i18next";
-import intervalPlural from "i18next-intervalplural-postprocessor";
+import HttpBackend from "i18next-http-backend";
 import LanguageDector from "i18next-browser-languagedetector";
 
 import { initReactI18next } from "react-i18next";
@@ -19,8 +19,8 @@ const DETECTION_OPTIONS = {
 export const defaultNS = "common";
 
 i18n
-    .use(LanguageDetector)
-    .use(intervalPlural)
+    .use(LanguageDector)
+    .use(HttpBackend)
     .use(initReactI18next)
     .init({
         detection: DETECTION_OPTIONS, 

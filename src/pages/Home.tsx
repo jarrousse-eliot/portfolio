@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import { useTranslation } from "react-i18next";
 
 const Home: FunctionComponent = () => {
@@ -9,7 +9,7 @@ const Home: FunctionComponent = () => {
             <h2>{t("hello")}</h2>
             <p>{t("title")}</p>
             <p>{t("intro")}</p>
-        <section>
+        </section>
     );
 };
 

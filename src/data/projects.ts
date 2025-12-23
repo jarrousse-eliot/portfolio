@@ -1,7 +1,7 @@
 export type Tag = {
     name:  string
     type: string
-    mastery?: int
+    mastery?: number
     category?: string
 }
 
@@ -9,9 +9,9 @@ export type Tag = {
 export type Project = {
     title: string
     description: string
-    technologies: Tag[]
+    technologies: string[] // Tag key
     repo: string
-    tags: Tag[]
+    tags: string[] // Tag key
     demo?: string
 }
 

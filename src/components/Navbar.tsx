@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
@@ -19,4 +19,4 @@ const Navbar: FunctionComponent = () => {
 };
 
 
-export default NavBar;
+export default Navbar;

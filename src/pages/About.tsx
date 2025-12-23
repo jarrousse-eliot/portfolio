@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import { useTranslation } from "react-i18next";
 
 const About: FunctionComponent = () => {
@@ -6,9 +6,9 @@ const About: FunctionComponent = () => {
 
     return (
         <section className="page">
-            <h2>{t("about.title")}<h2>
+            <h2>{t("about.title")}</h2>
             <p>{t("intro")}</p>
-            <h3>{t("skills")}<h3>
+            <h3>{t("skills")}</h3>
             <ul>
                 <li>HTML / CSS</li>
                 <li>Javascript / Typescript</li>
