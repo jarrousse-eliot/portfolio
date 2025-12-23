@@ -96,7 +96,7 @@ export const projects: Project[] = [
         technologies: ['React', 'TypeScript', 'Vite', 'HTML', 'CSS'], 
         repo: "https://github.com/jarrousse/portfolio",
         tags: ['solo', 'english'],  
-        demo: "https://jarrousse.github.io/portfolio/"
+        demo: "https://jarrousse-eliot.github.io/portfolio/"
     }
 
 ]

@@ -1,15 +1,23 @@
+:root {
+  --default-color: #222;
+  --default-bckgrnd: #f5f5f5;
+  --inverted-bckgrnd: #111;
+  --content-bckgrnd: #eeeeee;
+  --main-color: #5BBF34;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
-  color: #222;
+  background-color: var(--default-bckgrnd);
+  color: var(--default-color);
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: #111;
+  background: var(--inverted-bckgrnd);
 }
 
 .navbar a {
@@ -23,9 +31,76 @@ body {
 }
 
 .project-card {
-  background: white;
+  background: var(--content-bckgrnd);
+  border-color: var(--default-color);
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 8px;
 }
 
+.taglist {
+  display: flex;
+}
+
+.techno {
+  background: var(--main-color);
+  margin: 0 5px;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--main-color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--default-color);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--main-color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: var(--default-bckgrnd);
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: var(--main-color);
+  transition: background 0s;
+}
+
+button{
+  color: var(--main-color);
+  text-decoration: none;
+}

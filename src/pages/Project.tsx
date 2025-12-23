@@ -13,11 +13,22 @@ const Projects: FunctionComponent = () => {
                 <div key={name} className="project-card">
                     <h3>{t('name',  { ns: project.title })}</h3>
                     <p>{t('description', { ns: project.title })}</p>
-                    <p><strong>Tech:</strong> {project.technologies.join(', ')}</p>
+                    <p className="taglist"><strong>Tech:</strong>{
+                        project.technologies.map((techno, ) => (
+                            <div key={techno} className="techno">
+                                {techno}
+                            </div>
+                        ))
+                    }</p>
 
-                    <a href={project.repo} target="_blank">GitHub</a>
+                    <a href={project.repo} target="_blank">
+                    <button>GitHub</button>
+                    </a>
                     {project.demo && (
-                        <a href={project.demo} target="_blank"> Live Demo</a>
+                    
+                        <a href={project.demo} target="_blank">
+                        <button>Live Demo</button>
+                        </a>
                     )}
                     </div>
                 ))}
