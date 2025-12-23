@@ -1,0 +1,20 @@
+{
+    "Agile": "Agile", 
+    "group": "group", 
+    "solo": "solo", 
+    "english": "english", 
+    "french": "french", 
+    "german": "german", 
+    "type": {
+        "method": "method", 
+        "ptype": "project type",
+        "language": "language", 
+        "prog-language": "programmation language", 
+        "framework": "framework", 
+        "application": "application"
+    }, 
+    "category": {
+        "web": "web", 
+        "Agile": "Agile"
+    }
+}
