@@ -1,23 +1,24 @@
 :root {
-  --default-color: #222;
-  --default-bckgrnd: #f5f5f5;
-  --inverted-bckgrnd: #111;
-  --content-bckgrnd: #eeeeee;
-  --main-color: #5BBF34;
+  --color-background: #f9fafb;
+  --color-surface: #f5f5f5; /* For content backgrounds */
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #4E6B43;
+  --color-primary-accent: #5BBF34;
+  --color-border: #222226;
+
+
+  --top-nav-height: 70px;
+  --bottom-tab-height: 65px;
+
+  --color-button-background: #e9e9ed;
 }
+
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--default-bckgrnd);
-  color: var(--default-color);
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background: var(--inverted-bckgrnd);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
 }
 
 .navbar a {
@@ -27,80 +28,113 @@ body {
 }
 
 .page {
-  padding: 2rem;
+  margin: auto 10vw;
 }
 
 .project-card {
-  background: var(--content-bckgrnd);
-  border-color: var(--default-color);
+  background: var(--color-surface);
+  border-color: var(--color-border);
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 8px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+@media (max-width: 767px) {
+    .project-card {
+        display: block;
+    }
+
+    .project-card button {
+        margin: 7px 20px;
+    }
+
+    .project-card p {
+        margin: 3px 0;
+    }
 }
 
 .taglist {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .techno {
-  background: var(--main-color);
-  margin: 0 5px;
+  background: var(--color-primary-accent);
+  margin: 2px 5px;
   padding: 3px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 /* From Uiverse.io by cssbuttons-io */ 
-button {
+button, .btn {
   font-family: inherit;
+  background-color: var(--color-button-background);
   display: inline-block;
   width: 8em;
   height: 2.6em;
-  line-height: 2.5em;
   margin: 20px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  border: 2px solid var(--main-color);
+  border: 2px solid var(--color-primary-accent);
   transition: color 0.5s;
   z-index: 1;
   font-size: 17px;
   border-radius: 6px;
   font-weight: 500;
-  color: var(--default-color);
+  color: var(--color-primary-accent);
+  text-decoration: none;
 }
 
-button:before {
+.btn {
+  align-content: center;
+  text-align: center;
+}
+
+button:before, .btn:before {
   content: "";
   position: absolute;
   z-index: -1;
-  background: var(--main-color);
+  background: var(--color-primary-accent);
   height: 150px;
   width: 200px;
   border-radius: 50%;
 }
 
-button:hover {
-  color: var(--default-bckgrnd);
+button:hover, .btn:hover {
+  color: var(--color-background);
 }
 
-button:before {
+button:before, .btn:before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
 }
 
-button:hover:before {
+button:hover:before, .btn:hover:before {
   top: -30px;
   left: -30px;
 }
 
-button:active:before {
-  background: var(--main-color);
+button:active:before, .btn:active:before {
+  background: var(--color-primary-accent);
   transition: background 0s;
 }
 
-button{
-  color: var(--main-color);
-  text-decoration: none;
+.subtitle {
+    margin: 0;
+    font-size: .9rem;
+    font-style: oblique;
+}
+
+.inline-flex {
+    display:flex;
+    align-items: center;
+}
+
+.label {
+    margin-bottom: 5px;
 }

@@ -1,6 +1,8 @@
 import type { FunctionComponent } from "react";
 import { projects } from '../data/projects';
 import { useTranslation } from "react-i18next";
+import TagContext from "../components/tagContext";
+
 
 const Projects: FunctionComponent = () => {    
     const { t } = useTranslation();    
@@ -15,20 +17,15 @@ const Projects: FunctionComponent = () => {
                     <p>{t('description', { ns: project.title })}</p>
                     <p className="taglist"><strong>Tech:</strong>{
                         project.technologies.map((techno, ) => (
-                            <div key={techno} className="techno">
-                                {techno}
-                            </div>
+                            <TagContext tag={techno}/>
                         ))
                     }</p>
 
                     <a href={project.repo} target="_blank">
                     <button>GitHub</button>
                     </a>
-                    {project.demo && (
-                    
-                        <a href={project.demo} target="_blank">
-                        <button>Live Demo</button>
-                        </a>
+                    {project.demo && (                    
+                        <a href={project.demo} target="_blank" className="btn">Live Demo</a>
                     )}
                     </div>
                 ))}

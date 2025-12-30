@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import App from './App';
 import './styles/global.css';
+import './styles/navbar.css';
+import './styles/context.css';
+import './styles/tagContext.css';
 
 import './i18n.ts';
 

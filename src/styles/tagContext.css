@@ -1,0 +1,21 @@
+.tagContext {
+    background-color: var(--color-background);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-text-primary);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+.tagContext h3 {
+    margin: 5% 0;
+}
+
+.tagContext .inline-flex p {
+    margin: 0 10px;
+}
+
+@media (max-width: 767px) {
+    .tagContext { 
+    }
+}

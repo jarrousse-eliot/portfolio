@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.navbar {
+    --top-nav-height: 100px;
+    --bottom-tab-height: 65px;
+    --font-family-sans-serif: "Inter", -apple-system, sans-serif;
+    --transition-speed: 0.2s;
+}
+
+
+.page {
+    /* Add padding to the top for the desktop nav AND the bottom for the mobile nav */
+    padding-top: var(--top-nav-height);
+    padding-bottom: var(--bottom-tab-height);
+    min-height: 150vh;
+}
+
+/*
+ ========================================
+ CSS Custom Properties (App/SaaS Theme)
+ ========================================
+*/
+
+
+        /*
+        ========================================
+        Base & Page Styles
+        ========================================
+        */
+        *, *::before, *::after { box-sizing: border-box; } 
+
+        a { text-decoration: none; }
+        
+        /*
+        ========================================
+        Desktop-First Top Navbar Styles
+        ========================================
+        This is one of the two navigation components.
+        It is hidden by default on mobile (see media query at the bottom).
+        */
+        .desktop-nav {
+            position: fixed; top: 0; left: 0; z-index: 1000;
+            width: 100%; height: var(--top-nav-height);
+            display: flex; align-items: center;
+            background-color: var(--color-surface);
+            border-bottom: 1px solid var(--color-border);
+            padding: 0 2rem;
+        }
+        
+        .desktop-nav__container {
+            width: 100%; max-width: 1200px;
+            margin: 0 auto; display: flex;
+            align-items: center; justify-content: space-between;
+        }
+        
+        .desktop-nav__brand { font-size: 1.5rem; font-weight: 600; color: var(--color-text-primary); }
+        .desktop-nav__list { list-style: none; margin: 0; padding: 0; display: flex; gap: 2rem; }
+        .desktop-nav__link { font-weight: 500; color: var(--color-text-secondary); padding: 15px }
+        .desktop-nav__link:hover, .desktop-nav__link.active { color: var(--color-primary-accent); }
+        
+        /*
+        ========================================
+        Mobile-First Bottom Tab Bar Styles
+        ========================================
+        This is the second navigation component.
+        It is visible by default (mobile-first).
+        */
+        .mobile-tab-nav {
+            position: fixed; bottom: 0; left: 0; z-index: 1000;
+            width: 100%; height: var(--bottom-tab-height);
+            display: flex; justify-content: space-around;
+            background-color: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .tab-link {
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; flex-grow: 1;
+            gap: 4px; padding: 6px 0;
+            font-size: 0.75rem; color: var(--color-text-secondary);
+            transition: color var(--transition-speed) ease;
+        }
+        
+        .tab-link__icon { width: 24px; height: 24px; }
+        
+        /* Active state for the mobile tab */
+        .tab-link.active { color: var(--color-primary-accent); }
+        
+        /*
+        ========================================
+        The Responsive Switch
+        ========================================
+        */
+        /* On screens LARGER than 768px... */
+        @media (min-width: 768px) {
+            /* Hide the mobile bottom tab bar */
+            .mobile-tab-nav {
+                display: none;
+            }
+        }
+        
+        /* On screens SMALLER than 768px... */
+        @media (max-width: 767px) {
+            /* Hide the desktop top navbar */
+            .desktop-nav {
+                display: none;
+            }
+            /* Reset padding on body to account for hidden top nav */
+            .page {
+                padding-top: 0;
+            }
+        }
