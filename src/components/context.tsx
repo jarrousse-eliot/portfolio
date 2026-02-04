@@ -1,13 +1,17 @@
 import type { FunctionComponent } from 'react';
 
+type visibleEvent = {
+    (elements: HTMLDivElement): void;
+};
 
 interface ParentIdProps {
     children: React.ReactElement[], 
-    id: string;
+    id: string, 
+    onVisible: visibleEvent;
 }
 
 
-const Context: FunctionComponent<ParentIdProps> = ({ id, children }) => {
+const Context: FunctionComponent<ParentIdProps> = ({ id, children, onVisible }) => {
 
     const hideContext = () => {
         const contexts: NodeListOf<HTMLElement> = document.querySelectorAll(".context");
@@ -39,6 +43,7 @@ const Context: FunctionComponent<ParentIdProps> = ({ id, children }) => {
 
         hideContext();
         children.style.visibility = "visible";
+        onVisible(children);
     }
 
 

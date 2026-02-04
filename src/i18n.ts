@@ -6,9 +6,10 @@ import { initReactI18next } from "react-i18next";
 import commonEn from "./locales/en/common.json";
 import tagsEn from "./locales/en/tags.json";
 import portfolioEn from "./locales/en/portfolio.json";
+import thermonovaEn from "./locales/en/thermonova.json";
 
 const RESOURCES = {
-    en: { common: commonEn, tags: tagsEn, portfolio: portfolioEn}, 
+    en: { common: commonEn, tags: tagsEn, portfolio: portfolioEn, thermonova: thermonovaEn }, 
 };
 
 const DETECTION_OPTIONS = {

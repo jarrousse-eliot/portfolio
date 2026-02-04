@@ -6,6 +6,7 @@ import './styles/global.css';
 import './styles/navbar.css';
 import './styles/context.css';
 import './styles/tagContext.css';
+import './styles/progressbar.css';
 
 import './i18n.ts';
 

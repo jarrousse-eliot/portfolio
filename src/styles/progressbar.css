@@ -1,0 +1,32 @@
+
+
+.progressbar { /* grey bar */
+    background-color: grey;
+    height: 8px;
+    border-radius: 4px;
+}
+
+.progressbar #compute {
+    height: inherit;
+    border-radius: inherit;
+}
+
+.progressbar #compute #progress{
+    height: inherit;
+    background-color: var(--primary-accent);
+    border-radius: inherit;
+}
+
+@keyframes progress {
+    from {
+        width: 0%;
+    }
+    
+    to {
+        width: 100%;
+    }
+}
+
+.progressbar .prog-animation-ease-in {
+    animation: 0.7s ease-in 0s progress;
+}

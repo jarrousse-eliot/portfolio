@@ -13,17 +13,20 @@ const Projects: FunctionComponent = () => {
 
             {projects.map((project, name) => (
                 <div key={name} className="project-card">
-                    <h3>{t('name',  { ns: project.title })}</h3>
+                    <h1>{t('name',  { ns: project.title })}</h1>
                     <p>{t('description', { ns: project.title })}</p>
                     <p className="taglist"><strong>Tech:</strong>{
                         project.technologies.map((techno, ) => (
                             <TagContext tag={techno}/>
                         ))
                     }</p>
+                    <p className="taglist"><strong>Tags:</strong>{
+                        project.tags.map((tag, ) => (
+                            <TagContext tag={tag}/>
+                        ))
+                    }</p>
 
-                    <a href={project.repo} target="_blank">
-                    <button>GitHub</button>
-                    </a>
+                    <a href={project.repo} target="_blank" className="btn">GitHub</a>
                     {project.demo && (                    
                         <a href={project.demo} target="_blank" className="btn">Live Demo</a>
                     )}

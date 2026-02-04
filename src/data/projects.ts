@@ -97,6 +97,12 @@ export const projects: Project[] = [
         repo: "https://github.com/jarrousse/portfolio",
         tags: ['solo', 'english'],  
         demo: "https://jarrousse-eliot.github.io/portfolio/"
+    }, 
+    {
+        title: "thermonova", 
+        description: "Je ne sais pas quoi mettre là", 
+        technologies: ['flutter'], 
+        repo: "https://gitlab.esiea.fr/t404/flutter-app", 
+        tags: ['group', 'french'], 
     }
-
 ]
