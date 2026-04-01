@@ -1,0 +1,17 @@
+[
+    {
+        "title": "portfolio",
+        "description": "blablabla",
+        "technologies": ["React", "TypeScript", "Vite", "HTML", "CSS", "MUI"], 
+        "repo": "https://github.com/jarrousse/portfolio",
+        "tags": ["solo", "english", "french", "german"],  
+        "demo": "https://jarrousse-eliot.github.io/portfolio/"
+    }, 
+    {
+        "title": "thermonova", 
+        "description": "Je ne sais pas quoi mettre là", 
+        "technologies": ["Flutter", "Dart"], 
+        "repo": "https://gitlab.esiea.fr/t404/flutter-app", 
+        "tags": ["group", "french"]
+    }
+]
