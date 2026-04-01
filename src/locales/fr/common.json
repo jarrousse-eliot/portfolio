@@ -1,0 +1,22 @@
+{
+  "name": "Eliot Jarrousse", 
+  "hello": "Eliot Jarrousse",
+  "title": "Étudiant en école d'ingénieur spécialisé en cybersécurité",
+  "intro": "Je suis un étudiant en troisième année du cycle ingénieur à l'ESIEA, école d'ingénieur spécialisée en cybersécurité. J'aime travailler en équipe et explorer un large éventail de domaines. Je suis familier avec les méthodologies Agile et à l'aise avec la programmation grâce à de nombreux projets dans divers langages (C, C#, Java, JavaScript, Python, Lua, Flutter (Dart), HTML/CSS).", 
+  "about": {
+     "title": "À propos de moi"
+  }, 
+  "nav": {
+    "home": "Accueil", 
+    "about": "À propos", 
+    "projects": "Projets", 
+    "contact": "Contact"
+  },
+  "formations": {
+    "title": "Formations",
+    "degrees": {
+      "engineering": "Cycle Ingénieur - Cybersécurité",
+      "preparatory": "Cycle Préparatoire"
+    }
+  }
+}

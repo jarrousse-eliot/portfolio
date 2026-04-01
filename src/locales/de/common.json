@@ -1,0 +1,22 @@
+{
+  "name": "Eliot Jarrousse", 
+  "hello": "Eliot Jarrousse",
+  "title": "Ingenieurstudent mit Schwerpunkt Cybersicherheit",
+  "intro": "Ich bin ein Student im dritten Jahr des Ingenieurstudiums an der ESIEA mit Schwerpunkt Cybersicherheit. Ich arbeite gerne im Team und erkunde viele Bereiche. Ich kenne agile Methoden und bin dank zahlreicher Projekte in verschiedenen Sprachen (C, C#, Java, JavaScript, Python, Lua, Flutter (Dart), HTML/CSS) mit Programmierung vertraut.",
+  "about": {
+    "title": "Über mich"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "formations": {
+    "title": "Ausbildung",
+    "degrees": {
+      "engineering": "Ingenieurstudium - Cybersicherheit",
+      "preparatory": "Vorbereitungsstudium"
+    }
+  }
+}

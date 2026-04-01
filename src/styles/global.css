@@ -70,7 +70,7 @@ body {
 }
 
 /* From Uiverse.io by cssbuttons-io */ 
-button, .btn {
+.button, .btn {
   font-family: inherit;
   background-color: var(--button-background);
   display: inline-block;
@@ -95,7 +95,7 @@ button, .btn {
   text-align: center;
 }
 
-button:before, .btn:before {
+.button:before, .btn:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -105,22 +105,22 @@ button:before, .btn:before {
   border-radius: 50%;
 }
 
-button:hover, .btn:hover {
+.button:hover, .btn:hover {
   color: var(--background);
 }
 
-button:before, .btn:before {
+.button:before, .btn:before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
 }
 
-button:hover:before, .btn:hover:before {
+.button:hover:before, .btn:hover:before {
   top: -30px;
   left: -30px;
 }
 
-button:active:before, .btn:active:before {
+.button:active:before, .btn:active:before {
   background: var(--primary-accent);
   transition: background 0s;
 }

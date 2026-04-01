@@ -1,0 +1,4 @@
+{
+    "name": "Thermonova", 
+    "description": "Application mobile pour aider les propriétaires à rénover leurs logements. Utilise une API interne pour mémoriser les radiateurs et les solutions d'isolation, récupère des informations sur les aides à la rénovation depuis une API française externe."
+}

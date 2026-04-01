@@ -1,0 +1,27 @@
+{
+    "Agile": "Agile", 
+    "group": "groupe", 
+    "solo": "solo", 
+    "english": "anglais", 
+    "french": "français", 
+    "german": "allemand",
+    "Cybersecurity": "Cybersécurité",
+    "AdvancedProgramming": "Programmation Avancée",
+    "MachineLearning": "Apprentissage Automatique",
+    "SoftwareEngineering": "Génie Logiciel",
+    "WebDevelopment": "Développement Web",
+    "DatabaseManagement": "Gestion de Base de Données",
+    "TeamCollaboration": "Collaboration d'Équipe",
+    "type": {
+        "method": "méthode", 
+        "ptype": "type de projet",
+        "language": "langue", 
+        "prog-language": "langage de programmation", 
+        "framework": "framework", 
+        "application": "application"
+    }, 
+    "category": {
+        "web": "web", 
+        "Agile": "Agile"
+    }
+}

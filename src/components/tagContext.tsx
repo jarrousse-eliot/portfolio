@@ -1,9 +1,10 @@
-import type { FunctionComponent } from 'react';
-import Context from './context';
+import type { FunctionComponent, MouseEvent } from 'react';
+import * as React from 'react';
 import type { Tag } from '../data/projects.ts';
 import { tags, technologies } from '../data/projects.ts';
 import { useTranslation } from 'react-i18next';
 import ProgressBar from './ProgressBar';
+import { Popover } from '@mui/material';
 
 interface TagProps {
     tag: string, 
@@ -12,25 +13,50 @@ interface TagProps {
 
 const TagContext: FunctionComponent<TagProps> = ({ tag }) => {
     const { t } = useTranslation();
-    console.log(tags);
 
     let mytag: Tag | undefined = tags[tag];
 
     if (mytag == undefined) {
         mytag = technologies[tag];
-        if (mytag == undefined) return <div className="techno">{tag}</div>; 
+        if (mytag == undefined) return <button className="techno">{tag}</button>; 
     }
 
-    function animate_progressbar(elements: HTMLDivElement) {
-        const elem = elements.querySelector(".progressbar #progress");
+    const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null);
+
+    const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
+        setAnchorEl(event.currentTarget);
+        const elem = event.currentTarget.querySelector(".progressbar #progress");
         if (elem == null) return;
         elem.classList.add("prog-animation-ease-in");
-    }
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const open = Boolean(anchorEl);
+    const id = open ? `${mytag.name}-popover` : undefined;
 
     return (
-        <Context id={mytag.name} onVisible={animate_progressbar} >
-            <div className="techno">{t(mytag.name, { ns: "tags" })}</div>
-            <div className="tagContext">
+        <>
+            <button aria-describedby={id} onClick={handleClick} className="techno">
+                {t(mytag.name, { ns: "tags" })}
+            </button>
+            <Popover
+                id={id}
+                open={open}
+                anchorEl={anchorEl}
+                onClose={handleClose}
+                anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'left',
+                }}
+                transformOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'left',
+                }}
+            >
+                <div style={{padding: '0% 5%'}}>
                 <div className="inline-flex">
                     <h3>{mytag.name}</h3>
                     { mytag.category != undefined ? (<p>
@@ -45,8 +71,9 @@ const TagContext: FunctionComponent<TagProps> = ({ tag }) => {
                     </div>
                     <p style={{"margin": "5px"}}>{mytag.mastery == undefined ? 5 : mytag.mastery}/10</p>
                     </div></>) : (<></>)}
-            </div>
-        </Context>    
+                </div>
+            </Popover>
+        </>  
     )
 
 }

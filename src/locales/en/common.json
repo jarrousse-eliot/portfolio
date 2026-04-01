@@ -11,5 +11,12 @@
     "about": "About", 
     "projects": "Projects", 
     "contact": "Contact"
+  },
+  "formations": {
+    "title": "Formations",
+    "degrees": {
+      "engineering": "Engineering Cycle - Cybersecurity",
+      "preparatory": "Preparatory Cycle"
+    }
   }
 }

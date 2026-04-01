@@ -1,0 +1,4 @@
+{
+  "name": "Thermonova",
+  "description": "Mobile App zur Unterstützung von Hausbesitzern bei der Renovierung. Verwendet interne API zur Speicherung von Heizungs- und Isolierungslösungen und bezieht Informationen zu Renovierungszuschüssen aus einer externen französischen API."
+}
