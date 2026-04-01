@@ -8,7 +8,7 @@
   }, 
   "nav": {
     "home": "Home", 
-    "about": "About", 
+    "formations": "Formations", 
     "projects": "Projects", 
     "contact": "Contact"
   },
@@ -18,5 +18,15 @@
       "engineering": "Engineering Cycle - Cybersecurity",
       "preparatory": "Preparatory Cycle"
     }
+  },
+  "projects": {
+    "search_placeholder": "Search projects by name, technology, tag…",
+    "filter_by": "Filter by:",
+    "clear_filters": "Clear filters",
+    "no_results": "No projects found",
+    "no_results_hint": "Try adjusting your search or removing some filters.",
+    "results_count": "{{count}} project found",
+    "results_count_plural": "{{count}} projects found",
+    "reset": "Reset"
   }
 }

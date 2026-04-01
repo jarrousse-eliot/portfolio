@@ -222,7 +222,7 @@ export const projects: Project[] = [
         description: "blablabla",
         technologies: ['React', 'TypeScript', 'Vite', 'HTML', 'CSS', 'MUI'], 
         repo: "https://github.com/jarrousse/portfolio",
-        tags: ['solo', 'english'],  
+        tags: ['solo', 'english', 'french', 'german'],  
         demo: "https://jarrousse-eliot.github.io/portfolio/"
     }, 
     {

@@ -12,13 +12,15 @@ const Home: FunctionComponent = () => {
             <p>{t("title")}</p>
             <p>{t("intro")}</p>
             <h2>{t("skills")}</h2>
-            <p className="taglist"><strong>Tech:</strong>{
-                Object.values(tags).filter((e, ) => (e.mastery != undefined)).map((tag, ) => (
-                    <TagContext tag={tag.name}/>
+            <p className="taglist"><strong>Technologies:</strong>
+            {Object.entries(technologies).filter((e, ) => (e[1].mastery != undefined)).map((tag, ) => (
+                    <TagContext tag={tag[0]}/>
                 ))
             }
-            {Object.values(technologies).filter((e, ) => (e.mastery != undefined)).map((tag, ) => (
-                    <TagContext tag={tag.name}/>
+            </p>
+            <p className="taglist"><strong>Soft-skills:</strong>{
+                Object.entries(tags).filter((e ) => (e[1].mastery != undefined)).map((tag, ) => (
+                    <TagContext tag={tag[0]}/>
                 ))
             }
             </p>

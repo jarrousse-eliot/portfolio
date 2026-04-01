@@ -40,7 +40,7 @@ const TagContext: FunctionComponent<TagProps> = ({ tag }) => {
     return (
         <>
             <button aria-describedby={id} onClick={handleClick} className="techno">
-                {t(mytag.name, { ns: "tags" })}
+                {t(tag, { ns: "tags" })}
             </button>
             <Popover
                 id={id}

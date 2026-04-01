@@ -30,7 +30,7 @@ const Navbar: FunctionComponent = () => {
 
     const navItems = [
         { path: "/", label: "nav.home", icon: "fa-house" },
-        { path: "/about", label: "nav.about", icon: "fa-address-card" },
+        { path: "/formations", label: "nav.formations", icon: "fa-graduation-cap" },
         { path: "/projects", label: "nav.projects", icon: "fa-folder-open" },
         { path: "/contact", label: "nav.contact", icon: "fa-phone" },
     ];

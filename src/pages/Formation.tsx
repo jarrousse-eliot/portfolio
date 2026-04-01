@@ -1,22 +1,62 @@
 import type { FunctionComponent } from "react";
 import { useTranslation } from "react-i18next";
+import {
+    Typography,
+    List,
+    ListItem,
+    Box,
+    Avatar,
+    Link,
+} from "@mui/material";
+import TagContext from "../components/tagContext";
+import { formations } from "../data/formations";
 
-const About: FunctionComponent = () => {
-    const { t } = useTranslation();
+const Formation: FunctionComponent = () => {
+    const { t } = useTranslation(["common"]);
 
     return (
-        <section className="page">
-            <h2>{t("about.title")}</h2>
-            <p>{t("intro")}</p>
-            <h3>{t("skills")}</h3>
-            <ul>
-                <li>HTML / CSS</li>
-                <li>Javascript / Typescript</li>
-                <li>React</li>
-                <li>Git</li>
-            </ul>
-        </section>
+        <div className="page">
+            <h2>
+                {t("formations.title")}
+            </h2>
+            <List>
+                {formations.map((formation, index) => {
+                    const degreeKey = formation.degree.replace(/\s+/g, "").replace(/-/g, "");
+                    const schoolKey = formation.school;
+
+                    return (
+                        <ListItem key={index} alignItems="flex-start">
+                            {formation.logo && <Avatar src={formation.logo} sx={{ mr: 2 }} />}
+                            <Box sx={{ flexGrow: 1 }}>
+                                <Typography variant="h6">
+                                    {t(`${degreeKey}`)}
+                                </Typography>
+                                {formation.link ? (
+                                    <Link href={formation.link} target="_blank" rel="noopener">
+                                        {schoolKey}
+                                    </Link>
+                                ) : (
+                                    <Typography variant="body1">
+                                        {schoolKey}
+                                    </Typography>
+                                )}
+                                <Typography variant="body2" color="text.secondary">
+                                    {formation.year}
+                                </Typography>
+                                {formation.skills && (
+                                    <Box sx={{ mt: 1, display: "flex", flexWrap: "wrap", gap: 1 }}>
+                                        {formation.skills.map((skill) => (
+                                            <TagContext key={`${formation.school}-${skill}`} tag={skill} />
+                                        ))}
+                                    </Box>
+                                )}
+                            </Box>
+                        </ListItem>
+                    );
+                })}
+            </List>
+        </div>
     );
 };
 
-export default About;
+export default Formation;

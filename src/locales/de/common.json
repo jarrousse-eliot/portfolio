@@ -8,7 +8,7 @@
   },
   "nav": {
     "home": "Startseite",
-    "about": "Über",
+    "formations": "Ausbildung",
     "projects": "Projekte",
     "contact": "Kontakt"
   },
@@ -18,5 +18,15 @@
       "engineering": "Ingenieurstudium - Cybersicherheit",
       "preparatory": "Vorbereitungsstudium"
     }
+  },
+  "projects": {
+    "search_placeholder": "Projekte nach Name, Technologie, Tag suchen…",
+    "filter_by": "Filtern nach:",
+    "clear_filters": "Filter löschen",
+    "no_results": "Keine Projekte gefunden",
+    "no_results_hint": "Versuchen Sie, die Suche anzupassen oder Filter zu entfernen.",
+    "results_count": "{{count}} Projekt gefunden",
+    "results_count_plural": "{{count}} Projekte gefunden",
+    "reset": "Zurücksetzen"
   }
 }

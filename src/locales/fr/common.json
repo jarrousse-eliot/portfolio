@@ -8,7 +8,7 @@
   }, 
   "nav": {
     "home": "Accueil", 
-    "about": "À propos", 
+    "formations": "Formations", 
     "projects": "Projets", 
     "contact": "Contact"
   },
@@ -18,5 +18,15 @@
       "engineering": "Cycle Ingénieur - Cybersécurité",
       "preparatory": "Cycle Préparatoire"
     }
+  },
+  "projects": {
+    "search_placeholder": "Rechercher par nom, technologie, tag…",
+    "filter_by": "Filtrer par :",
+    "clear_filters": "Effacer les filtres",
+    "no_results": "Aucun projet trouvé",
+    "no_results_hint": "Essayez de modifier votre recherche ou de retirer des filtres.",
+    "results_count": "{{count}} projet trouvé",
+    "results_count_plural": "{{count}} projets trouvés",
+    "reset": "Réinitialiser"
   }
 }
