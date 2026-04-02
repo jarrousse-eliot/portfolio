@@ -29,7 +29,7 @@ const Formation: FunctionComponent = () => {
                             {formation.logo && <Avatar src={formation.logo} sx={{ mr: 2 }} />}
                             <Box sx={{ flexGrow: 1 }}>
                                 <Typography variant="h6">
-                                    {t(`${degreeKey}`)}
+                                    {t(`formations.degrees.${degreeKey}`)}
                                 </Typography>
                                 {formation.link ? (
                                     <Link href={formation.link} target="_blank" rel="noopener">

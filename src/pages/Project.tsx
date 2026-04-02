@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react";
 import { useState, useMemo } from "react";
-import { projects, tags, technologies } from '../data/projects';
+import { projects } from '../data/projects';
 import { useTranslation } from "react-i18next";
 import TagContext from "../components/tagContext";
 import '../styles/projects.css';

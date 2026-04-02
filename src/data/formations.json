@@ -1,6 +1,6 @@
 [
     {
-        "degree": "formations.degrees.engineering",
+        "degree": "engineering",
         "school": "ESIEA",
         "year": "2022-2025",
         "logo": "https://www.esiea.fr/wp-content/uploads/2020/05/logo-esiea.png",
@@ -8,7 +8,7 @@
         "skills": ["Cybersecurity", "AdvancedProgramming", "Agile", "MachineLearning"]
     },
     {
-        "degree": "formations.degrees.preparatory",
+        "degree": "preparatory",
         "school": "ESIEA",
         "year": "2020-2022",
         "logo": "https://www.esiea.fr/wp-content/uploads/2020/05/logo-esiea.png",
