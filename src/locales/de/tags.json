@@ -1,27 +1,28 @@
 {
-  "Agile": "Agile",
-  "group": "gruppe",
-  "solo": "solo",
-  "english": "englisch",
-  "french": "französisch",
-  "german": "deutsch",
-  "Cybersecurity": "Cybersicherheit",
-  "AdvancedProgramming": "Fortgeschrittene Programmierung",
-  "MachineLearning": "Maschinelles Lernen",
-  "SoftwareEngineering": "Softwareentwicklung",
-  "WebDevelopment": "Webentwicklung",
-  "DatabaseManagement": "Datenbankverwaltung",
-  "TeamCollaboration": "Teamzusammenarbeit",
-  "type": {
-    "method": "methode",
-    "ptype": "projektart",
-    "language": "sprache",
-    "prog-language": "programmiersprache",
-    "framework": "framework",
-    "application": "anwendung"
-  },
-  "category": {
-    "web": "web",
-    "Agile": "Agile"
-  }
+    "Agile": "Agile",
+    "group": "gruppe",
+    "solo": "solo",
+    "english": "englisch",
+    "french": "französisch",
+    "german": "deutsch",
+    "Cybersecurity": "Cybersicherheit",
+    "AdvancedProgramming": "Fortgeschrittene Programmierung",
+    "MachineLearning": "Maschinelles Lernen",
+    "SoftwareEngineering": "Softwareentwicklung",
+    "WebDevelopment": "Webentwicklung",
+    "DatabaseManagement": "Datenbankverwaltung",
+    "TeamCollaboration": "Teamzusammenarbeit",
+    "type": {
+        "method": "methode",
+        "ptype": "projektart",
+        "language": "sprache",
+        "prog-language": "programmiersprache",
+        "framework": "framework",
+        "application": "anwendung"
+    },
+    "category": {
+        "web": "web",
+        "Agile": "Agile"
+    },
+    "test": "test"
 }
