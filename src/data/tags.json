@@ -1,32 +1,32 @@
 {
     "tags": {
         "Agile": {
-            "name": "Agile", 
-            "type": "method", 
-            "mastery": 8, 
+            "name": "Agile",
+            "type": "method",
+            "mastery": 8,
             "category": "Agile"
-        }, 
+        },
         "group": {
-            "name": "group", 
+            "name": "group",
             "type": "ptype"
         },
         "solo": {
-            "name": "solo", 
+            "name": "solo",
             "type": "ptype"
-        }, 
+        },
         "english": {
-            "name": "english", 
-            "type": "language", 
+            "name": "english",
+            "type": "language",
             "mastery": 8
-        }, 
+        },
         "french": {
-            "name": "french", 
-            "type": "language", 
+            "name": "french",
+            "type": "language",
             "mastery": 10
-        }, 
+        },
         "german": {
-            "name": "german", 
-            "type": "language", 
+            "name": "german",
+            "type": "language",
             "mastery": 4
         },
         "Cybersecurity": {
@@ -107,92 +107,97 @@
             "name": "Critical Thinking",
             "type": "soft-skill",
             "mastery": 8
+        },
+        "test": {
+            "name": "test",
+            "type": "prog-language",
+            "mastery": 5
         }
     },
     "technologies": {
         "React": {
-            "name": "React", 
-            "type": "framework", 
-            "mastery": 5, 
-            "category":"web"
-        }, 
+            "name": "React",
+            "type": "framework",
+            "mastery": 5,
+            "category": "web"
+        },
         "Jira": {
-            "name": "Jira", 
-            "type": "application", 
-            "mastery": 7, 
+            "name": "Jira",
+            "type": "application",
+            "mastery": 7,
             "category": "Agile"
-        }, 
+        },
         "HTML": {
-            "name": "HTML", 
-            "type": "prog-language", 
-            "mastery": 8, 
+            "name": "HTML",
+            "type": "prog-language",
+            "mastery": 8,
             "category": "web"
         },
         "CSS": {
-            "name": "CSS", 
-            "type": "prog-language", 
-            "mastery": 8, 
+            "name": "CSS",
+            "type": "prog-language",
+            "mastery": 8,
             "category": "web"
         },
         "TypeScript": {
-            "name": "TypeScript", 
-            "type": "prog-language", 
-            "mastery": 6, 
+            "name": "TypeScript",
+            "type": "prog-language",
+            "mastery": 6,
             "category": "web"
-        }, 
+        },
         "Vite": {
-            "name": "Vite", 
-            "type": "framework", 
-            "mastery": 3, 
+            "name": "Vite",
+            "type": "framework",
+            "mastery": 3,
             "category": "web"
         },
         "Flutter": {
-            "name": "Flutter", 
-            "type": "framework", 
-            "mastery": 4, 
+            "name": "Flutter",
+            "type": "framework",
+            "mastery": 4,
             "category": "web"
         },
         "Dart": {
-            "name": "Dart", 
-            "type": "prog-language", 
-            "mastery": 4, 
+            "name": "Dart",
+            "type": "prog-language",
+            "mastery": 4,
             "category": "web"
         },
         "C": {
-            "name": "C", 
-            "type": "prog-language", 
+            "name": "C",
+            "type": "prog-language",
             "mastery": 7
         },
         "CSharp": {
-            "name": "C#", 
-            "type": "prog-language", 
+            "name": "C#",
+            "type": "prog-language",
             "mastery": 6
         },
         "Java": {
-            "name": "Java", 
-            "type": "prog-language", 
+            "name": "Java",
+            "type": "prog-language",
             "mastery": 6
         },
         "JavaScript": {
-            "name": "JavaScript", 
-            "type": "prog-language", 
-            "mastery": 7, 
+            "name": "JavaScript",
+            "type": "prog-language",
+            "mastery": 7,
             "category": "web"
         },
         "Python": {
-            "name": "Python", 
-            "type": "prog-language", 
+            "name": "Python",
+            "type": "prog-language",
             "mastery": 6
         },
         "Lua": {
-            "name": "Lua", 
-            "type": "prog-language", 
+            "name": "Lua",
+            "type": "prog-language",
             "mastery": 3
         },
         "MUI": {
-            "name": "MUI", 
-            "type": "framework", 
-            "mastery": 5, 
+            "name": "MUI",
+            "type": "framework",
+            "mastery": 5,
             "category": "web"
         }
     }
