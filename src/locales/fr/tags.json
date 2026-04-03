@@ -1,9 +1,9 @@
 {
-    "Agile": "Agile", 
-    "group": "groupe", 
-    "solo": "solo", 
-    "english": "anglais", 
-    "french": "français", 
+    "Agile": "Agile",
+    "group": "groupe",
+    "solo": "solo",
+    "english": "anglais",
+    "french": "français",
     "german": "allemand",
     "Cybersecurity": "Cybersécurité",
     "AdvancedProgramming": "Programmation Avancée",
@@ -13,15 +13,16 @@
     "DatabaseManagement": "Gestion de Base de Données",
     "TeamCollaboration": "Collaboration d'Équipe",
     "type": {
-        "method": "méthode", 
+        "method": "méthode",
         "ptype": "type de projet",
-        "language": "langue", 
-        "prog-language": "langage de programmation", 
-        "framework": "framework", 
+        "language": "langue",
+        "prog-language": "langage de programmation",
+        "framework": "framework",
         "application": "application"
-    }, 
+    },
     "category": {
-        "web": "web", 
+        "web": "web",
         "Agile": "Agile"
-    }
+    },
+    "test": "test"
 }
