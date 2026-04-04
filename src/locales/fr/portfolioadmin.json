@@ -1,0 +1,4 @@
+{
+    "name": "Portail administratif portfolio",
+    "description": "Permet n'importe qui avec un access token du repository git de modifier les données du site portfolio (ce projet a été rajouté par ce portail par exemple)"
+}
