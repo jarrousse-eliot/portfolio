@@ -1,0 +1,4 @@
+{
+    "name": "Portfolio Admin panel",
+    "description": "Allow anyone with an access token to edit data of the portfolio website (this project was injected with this panel)"
+}
