@@ -23,6 +23,5 @@
     "category": {
         "web": "web",
         "Agile": "Agile"
-    },
-    "test": "test"
+    }
 }
