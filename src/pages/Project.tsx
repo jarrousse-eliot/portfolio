@@ -135,8 +135,8 @@ const Projects: FunctionComponent = () => {
             ) : (
                 filteredAndSorted.map((project, idx) => (
                     <div key={idx} className="project-card">
-                        <h1>{t('name', { ns: project.title })}</h1>
-                        <p>{t('description', { ns: project.title })}</p>
+                        <h1>{t(`${project.title}.name`, { ns: 'projects' })}</h1>
+                        <p>{t(`${project.title}.description`, { ns: 'projects' })}</p>
                         <p className="taglist">
                             <strong>Tech:</strong>
                             {project.technologies.map((techno, i) => (

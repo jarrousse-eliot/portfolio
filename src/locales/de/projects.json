@@ -1,0 +1,14 @@
+{
+    "portfolio": {
+        "title": "Portfolio",
+        "description": "Hier finden Sie eine Auswahl meiner Projekte, die meine Fähigkeiten und Erfahrungen in verschiedenen Bereichen der Softwareentwicklung demonstrieren."
+    },
+    "thermonova": {
+        "name": "Thermonova",
+        "description": "Entwicklung einer innovativen Heizungssteuerungslösung, die Energieeffizienz und Benutzerfreundlichkeit kombiniert. Das Projekt umfasst die Implementierung von IoT-Technologien und die Integration mit Smart-Home-Systemen."
+    },
+    "portfolioadmin": {
+        "name": "Portfolio Admin",
+        "description": "Entwicklung eines benutzerfreundlichen Admin-Dashboards zur Verwaltung von Portfolio-Projekten. Das Dashboard ermöglicht die einfache Aktualisierung von Projektinformationen, das Hinzufügen neuer Projekte und die Organisation bestehender Projekte."
+    }
+}

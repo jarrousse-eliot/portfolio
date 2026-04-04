@@ -1,0 +1,14 @@
+{
+    "portfolio": {
+        "title": "Portfolio",
+        "description": "Portfolio personnel construit avec React et TypeScript."
+    },
+    "thermonova": {
+        "name": "Thermonova",
+        "description": "Développement d'une solution innovante de contrôle de chauffage qui combine l'efficacité énergétique et la convivialité. Le projet comprend l'implémentation de technologies IoT et l'intégration avec les systèmes domestiques intelligents."
+    },
+    "portfolioadmin": {
+        "name": "Portail administratif portfolio",
+        "description": "Développement d'un tableau de bord administratif convivial pour la gestion des projets de portfolio. Le tableau de bord permet une mise à jour facile des informations du projet, l'ajout de nouveaux projets et l'organisation des projets existants."
+    }
+}

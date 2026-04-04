@@ -5,23 +5,20 @@ import LanguageDector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 import commonEn from "./locales/en/common.json";
 import tagsEn from "./locales/en/tags.json";
-import portfolioEn from "./locales/en/portfolio.json";
-import thermonovaEn from "./locales/en/thermonova.json";
+import projectsEn from "./locales/en/projects.json";
 
 import commonFr from "./locales/fr/common.json";
 import tagsFr from "./locales/fr/tags.json";
-import portfolioFr from "./locales/fr/portfolio.json";
-import thermonovaFr from "./locales/fr/thermonova.json";
+import projectsFr from "./locales/fr/projects.json";
 
 import commonDe from "./locales/de/common.json";
 import tagsDe from "./locales/de/tags.json";
-import portfolioDe from "./locales/de/portfolio.json";
-import thermonovaDe from "./locales/de/thermonova.json";
+import projectsDe from "./locales/de/projects.json";
 
 const RESOURCES = {
-    en: { common: commonEn, tags: tagsEn, portfolio: portfolioEn, thermonova: thermonovaEn },
-    fr: { common: commonFr, tags: tagsFr, portfolio: portfolioFr, thermonova: thermonovaFr },
-    de: { common: commonDe, tags: tagsDe, portfolio: portfolioDe, thermonova: thermonovaDe },
+    en: { common: commonEn, tags: tagsEn, projects: projectsEn },
+    fr: { common: commonFr, tags: tagsFr, projects: projectsFr },
+    de: { common: commonDe, tags: tagsDe, projects: projectsDe },
 };
 
 const DETECTION_OPTIONS = {
