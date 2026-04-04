@@ -107,11 +107,6 @@
             "name": "Critical Thinking",
             "type": "soft-skill",
             "mastery": 8
-        },
-        "test": {
-            "name": "test",
-            "type": "prog-language",
-            "mastery": 5
         }
     },
     "technologies": {
